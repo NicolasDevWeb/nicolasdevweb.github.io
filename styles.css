@@ -78,6 +78,19 @@ section {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.img_doc {
+  width: 150px;
+  display: block; /* Pour empêcher l'image de se mélanger avec le texte */
+  margin-bottom: 10px; /* Espace entre l'image et la description */
+  width: 100px; /* Taille de l'image (ajuste selon tes besoins) */
+  height: auto; /* Maintient les proportions */
+}
+
+.flex_doc {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .rss-item h4 {
   margin: 0 0 10px;
 }
