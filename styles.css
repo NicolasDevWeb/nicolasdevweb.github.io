@@ -86,6 +86,15 @@ section {
   height: auto; /* Maintient les proportions */
 }
 
+.img_doc_moi {
+  width: 150px;
+  display: block; /* Pour empêcher l'image de se mélanger avec le texte */
+  margin-bottom: 10px; /* Espace entre l'image et la description */
+  width: 100px; /* Taille de l'image (ajuste selon tes besoins) */
+  height: auto;
+  border-radius: 50%;
+}
+
 .flex_doc {
   display: flex;
   justify-content: space-evenly;
