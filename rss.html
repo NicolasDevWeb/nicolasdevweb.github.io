@@ -9,14 +9,23 @@
   <body>
     <div class="container">
       <header>
-        <h1>Nicolas WEBER</h1>
+        <a href="index.html"> <h1>Nicolas WEBER</h1> </a>
         <nav>
           <ul>
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="about.html">À propos</a></li>
-            <li><a href="projects.html">Projets</a></li>
-            <li><a href="skills.html">Compétences</a></li>
+            <li>
+              <a
+                href="e1737545-ad0c-409f-80c3-35e6ade683fd_Export-c295e49f-5b20-4e20-b38d-8c73fb2724e9/Plan de reprise d’activité 1cc158f35a99802d82bfd2538d8cc514.html"
+                >Incident Cyber</a
+              >
+            </li>
+            <li><a href="rss.html">Veille technologique</a></li>
             <li><a href="docs.html">Documentations</a></li>
+            <li>
+              <a href="docs/TableauDeSynthese.pdf">Tableau de synthèse</a>
+            </li>
+            <!-- <li><a href="skills.html">Compétences</a></li> -->
+            <li><a href="about.html">À propos</a></li>
           </ul>
         </nav>
       </header>
@@ -37,6 +46,16 @@
           <h3>2. Actualités de Dev.to</h3>
           <div id="rss-devto"></div>
         </section>
+
+        <section>
+          <h3>3. Actualités de Stéphane Robert</h3>
+          <div id="rss-stephane-robert"></div>
+        </section>
+
+        <section>
+          <h3>4. Alertes CERT-FR (ANSSI)</h3>
+          <div id="rss-certfr"></div>
+        </section>
       </main>
 
       <footer>
@@ -48,6 +67,11 @@
       const feeds = [
         { id: "rss-developpez", url: "https://www.developpez.com/index/rss" },
         { id: "rss-devto", url: "https://dev.to/feed" },
+        {
+          id: "rss-stephane-robert",
+          url: "https://blog.stephane-robert.info/post/rss.xml",
+        },
+        { id: "rss-certfr", url: "https://www.cert.ssi.gouv.fr/alerte/feed/" },
       ];
 
       async function fetchRSS(feedId, feedUrl) {
