@@ -153,6 +153,11 @@ section {
   margin-left: 50px;
 }
 
+.linkAbout {
+  text-decoration: none;
+  font-weight: bold;
+}
+
 .img_doc_moi {
   width: 150px;
   display: block; /* Pour empêcher l'image de se mélanger avec le texte */
