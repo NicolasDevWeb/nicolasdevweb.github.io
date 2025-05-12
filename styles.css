@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 html,
 body {
-  font-family: Arial, sans-serif;
+  /* font-family: Arial, sans-serif; */
+  font-family: "Montserrat", sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -15,19 +18,25 @@ body {
 }
 
 header {
+  font-family: "Montserrat", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #242038;
-  color: #fff;
+  background: #cdcdcd;
+  color: #000000;
   padding: 10px;
   text-align: center;
+}
+
+header a {
+  color: #000000;
+  text-decoration: none;
 }
 
 main {
   flex: 1; /* Prend tout l'espace restant */
   padding: 20px;
-  background: #d3d3d3;
+  background: #e4e4e4;
 }
 
 header nav ul {
@@ -41,7 +50,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: #fff;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -62,8 +71,8 @@ section {
 footer {
   text-align: center;
   padding: 10px;
-  background: #242038;
-  color: #fff;
+  background: #cdcdcd;
+  color: #000000;
 }
 
 section {
@@ -78,12 +87,70 @@ section {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.img_doc {
-  width: 150px;
+.about {
+  display: flex;
+}
+
+.img_clinique {
+  align-self: center;
+  width: 45%;
+  border-radius: 1%;
+  box-shadow: 5px 5px 10px rgb(108, 108, 108);
+}
+
+.img_docAbout {
   display: block; /* Pour empêcher l'image de se mélanger avec le texte */
-  margin-bottom: 10px; /* Espace entre l'image et la description */
-  width: 100px; /* Taille de l'image (ajuste selon tes besoins) */
+  margin: 10px 10px 10px 50px; /* Espace entre l'image et la description */
+  width: 70%; /* Taille de l'image (ajuste selon tes besoins) */
   height: auto; /* Maintient les proportions */
+  border-radius: 5%;
+  box-shadow: 5px 5px 10px rgb(108, 108, 108);
+}
+
+.doc_card {
+  background-color: #fff; /* Fond blanc pour les cartes */
+  padding: 20px; /* Espacement à l'intérieur de la carte */
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  text-align: center;
+  width: 300px; /* Largeur fixe pour chaque carte */
+  height: 200px;
+  margin: 10px; /* Espacement entre les cartes */
+  position: relative;
+}
+
+.img_doc {
+  width: 100px; /* Largeur de l'image */
+  height: auto; /* Laisser la hauteur s'ajuster proportionnellement */
+  margin-bottom: 10px; /* Espace entre l'image et la description */
+  border-radius: 8px; /* Coins arrondis pour l'image */
+}
+
+.descriptionIndex {
+  display: block; /* Chaque texte de description occupe une nouvelle ligne */
+  text-align: left;
+  padding-top: 10px; /* Espacement entre l'image et le texte */
+  font-weight: bold; /*Mettre le texte en gras */
+  /* position: absolute; /* Permet de le fixer au bas de la carte */
+}
+
+.linkIndex {
+  text-decoration: none;
+}
+
+.description {
+  display: block; /* Chaque texte de description occupe une nouvelle ligne */
+  text-align: center;
+  padding-top: 10px; /* Espacement entre l'image et le texte */
+  font-weight: bold; /* Mettre le texte en gras */
+  position: absolute; /* Permet de le fixer au bas de la carte */
+  bottom: 10px; /* Espacement du bas de la carte */
+  left: 50%; /* Centrer horizontalement */
+  transform: translateX(-50%);
+}
+
+.descriptionAbout {
+  margin-left: 50px;
 }
 
 .img_doc_moi {
@@ -97,7 +164,7 @@ section {
 
 .flex_doc {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap; /* Permet de gérer les éléments sur plusieurs lignes */
 }
 
 .rss-item h4 {
