@@ -172,6 +172,15 @@ section {
   flex-wrap: wrap; /* Permet de gérer les éléments sur plusieurs lignes */
 }
 
+.linkRSS {
+  text-decoration: none;
+  font-weight: bold;
+}
+.linkRSSdiv {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .rss-item h4 {
   margin: 0 0 10px;
 }
